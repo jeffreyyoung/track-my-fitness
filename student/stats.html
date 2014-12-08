@@ -46,6 +46,14 @@ font:10pt tahoma;
 border:1px solid gray;
 border-radius:15px;
 }
+#question {
+	float:right;
+}
+#close {
+    float:right;
+    margin-top: 60%;
+    margin-right: 15px;
+}
 </style>
 <head>
     <title>Track My Fitness - Stats</title>
@@ -57,7 +65,7 @@ border-radius:15px;
 <div id="cover"></div>
 <div id="dialog">
 	Show Explanation
-	<br><button onclick="closePopUp('dialog');">OK</button>
+	<br><button id="close" onclick="closePopUp('dialog');">OK</button>
 </div>
     <div class="mobile-window">
         <div class="container">
@@ -75,7 +83,7 @@ border-radius:15px;
 				<br>
 				<h2>Improvement</h2>
 				<div>
-					<img onclick = "showPopUp('dialog')" id="question" src="question.jpg">
+					<img onclick = "showPopUp('dialog')" id="question" src="QuestionMark.png">
 				</div>
 				<table id="improvementTable">
 					<tr>
