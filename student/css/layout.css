@@ -18,6 +18,16 @@ body {
 .container {
   background-color: white;
 }
+
+#test {
+width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #b7d4f5;
+  color: #1a549b;
+  padding: 15px;
+  
+}
 header {
   width: 100%;
   position: fixed;
@@ -31,7 +41,7 @@ header * {
 }
 header .logo {
   width: 24%;
-  background: url("path/to/logo.png") left top;
+  background: url("logo.png") left top;
 }
 header h1 {
   width: 49%;
