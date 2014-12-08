@@ -73,6 +73,7 @@ function repaint() {
                                  
     }
 }
+
 repaint()
 
 function generateHtml(data) {
@@ -131,7 +132,7 @@ $workouts = document.getElementById('workouts')
 addBtn.addEventListener('click', function(){
     console.log('hi')
     this.style.display = "none";
-    var tableForm =   '<table id="save-table"> <caption>Date</caption> <tr> <th>Exercise</th> <th>Sets</th> <th>Reps</th> <th>Weight</th> </tr><tr> <td>bench</td><td> <input id="s-1" type="number"></input> </td><td> <input id="r-1" type="number"></input> </td><td> <input id="w-1" type="number"></input> </td></tr><tr> <td>squat</td><td> <input id="s-2" type="number"></input> </td><td> <input id="r-2" type="number"></input> </td><td> <input id="w-2" type="number"></input> </td></tr><tr> <td>lunges</td><td> <input id="s-3" type="number"></input> </td><td> <input id="r-3" type="number"></input> </td><td> <input id="w-3" type="number"></input> </td></tr><tr> <td>curls</td><td> <input id="s-4" type="number"></input> </td><td> <input id="r-4" type="number"></input> </td><td> <input id="w-4" type="number"></input> </td></tr></table>'
+    var tableForm =   '<table id="save-table"> <caption>Date</caption> <tr> <th>Exercise</th> <th>Sets</th> <th>Reps</th> <th>Weight</th> </tr><tr> <td>bench</td><td> <input id="s-1" type="number"></input> </td><td> <input id="r-1" type="number"></input> </td><td> <input id="w-1" type="number"></input> </td></tr><tr> <td>squat</td><td> <input id="s-2" type="number"></input> </td><td> <input id="r-2" type="number"></input> </td><td> <input id="w-2" type="number"></input> </td></tr><tr> <td>lunges</td><td> <input id="s-3" type="number"></input> </td><td> <input id="r-3" type="number"></input> </td><td> <input id="w-3" type="number"></input> </td></tr><tr> <td>lats</td><td> <input id="s-4" type="number"></input> </td><td> <input id="r-4" type="number"></input> </td><td> <input id="w-4" type="number"></input> </td></tr></table>'
     var div = document.createElement("div")
     div.innerHTML = tableForm
     
@@ -151,7 +152,16 @@ addBtn.addEventListener('click', function(){
             var weight = document.querySelector('#save-table #w-' + j).value
             console.log(sets,reps,weight)
             var exercise = {}
-            exercise.name = "new exercise"
+            if (i === 0)
+            	exercise.name = "bench"
+            else if (i===1)
+            	exercise.name = "squat"
+            else if (i === 2)
+            	exercise.name = "curls"
+            else if (i === 3)
+				exercise.name = "lats"
+
+
             exercise.sets = sets;
             exercise.reps = reps
             exercise.weight = weight
