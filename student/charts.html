@@ -9,7 +9,66 @@
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
     <script src="js/charts.js"></script>
 </head>
+<script type="text/javascript">
+function showPopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "block"
+dlg.style.display = "block"
+if (document.body.style.overflow = "hidden") {
+    cvr.style.width = "1024"
+    cvr.style.height = "100&#37;"
+    }
+}
+function closePopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "none"
+dlg.style.display = "none"
+document.body.style.overflowY = "scroll"
+}
+</script>
+<style type="text/css">
+#cover {
+display:none;
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+background:black;
+z-index: 99;
+filter:alpha(Opacity=50);
+opacity:0.5;
+-moz-opacity:0.5;
+-khtml-opacity:0.5
+}
+#dialog {
+display:none;
+left:200px;
+top:200px;
+width:200px;
+height:200px;
+position:absolute;
+z-index:100;
+background:white;
+padding:2px;
+font:10pt tahoma;
+border:1px solid gray;
+border-radius:15px;
+}
+#question {
+    float:right;
+    margin-top: 40px;
+}
+</style>
 <body>
+    <div id="cover"></div>
+<div id="dialog">
+    Show Explanation
+    <br><button onclick="closePopUp('dialog');">OK</button>
+</div>
+
     <div class="mobile-window">
         <div class="container">
             
@@ -22,6 +81,7 @@
             </header>
             
             <section class="content">
+                <img onclick = "showPopUp('dialog')" id="question" src="QuestionMark.png">
                <div id="firstChart"></div> 
                <div id="another"></div> 
             </section>

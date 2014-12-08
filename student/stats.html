@@ -1,4 +1,52 @@
 <html>
+<script type="text/javascript">
+function showPopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "block"
+dlg.style.display = "block"
+if (document.body.style.overflow = "hidden") {
+	cvr.style.width = "1024"
+	cvr.style.height = "100&#37;"
+	}
+}
+function closePopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "none"
+dlg.style.display = "none"
+document.body.style.overflowY = "scroll"
+}
+</script>
+<style type="text/css">
+#cover {
+display:none;
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+background:black;
+filter:alpha(Opacity=50);
+opacity:0.5;
+-moz-opacity:0.5;
+-khtml-opacity:0.5
+}
+#dialog {
+display:none;
+left:200px;
+top:200px;
+width:200px;
+height:200px;
+position:absolute;
+z-index:100;
+background:white;
+padding:2px;
+font:10pt tahoma;
+border:1px solid gray;
+border-radius:15px;
+}
+</style>
 <head>
     <title>Track My Fitness - Stats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +54,11 @@
 	<link type="text/css" rel="stylesheet" href="css/stats.css">
 </head>
 <body>
+<div id="cover"></div>
+<div id="dialog">
+	Show Explanation
+	<br><button onclick="closePopUp('dialog');">OK</button>
+</div>
     <div class="mobile-window">
         <div class="container">
             
@@ -22,7 +75,7 @@
 				<br>
 				<h2>Improvement</h2>
 				<div>
-					<a href=""><img id="question" src="question.jpg"></a>
+					<img onclick = "showPopUp('dialog')" id="question" src="question.jpg">
 				</div>
 				<table id="improvementTable">
 					<tr>
