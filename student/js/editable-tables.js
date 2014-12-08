@@ -131,7 +131,7 @@ $workouts = document.getElementById('workouts')
 addBtn.addEventListener('click', function(){
     console.log('hi')
     this.style.display = "none";
-    var tableForm =   '<div id="workouts"> <table> <caption>Date<span class="edit-icon"></span> </caption> <tr> <th>Exercise</th> <th>Sets</th> <th>Reps</th> <th>Weight</th> </tr><tr> <td>bench</td><td> <input id="s-1" type="number"></input> </td><td> <input id="r-1" type="number"></input> </td><td> <input id="w-1" type="number"></input> </td></tr><tr> <td>squat</td><td> <input id="s-2" type="number"></input> </td><td> <input id="r-2" type="number"></input> </td><td> <input id="w-2" type="number"></input> </td></tr><tr> <td>lunges</td><td> <input id="s-3" type="number"></input> </td><td> <input id="r-3" type="number"></input> </td><td> <input id="w-3" type="number"></input> </td></tr><tr> <td>curls</td><td> <input id="s-4" type="number"></input> </td><td> <input id="r-4" type="number"></input> </td><td> <input id="w-4" type="number"></input> </td></tr></table>'
+    var tableForm =   '<table id="save-table"> <caption>Date</caption> <tr> <th>Exercise</th> <th>Sets</th> <th>Reps</th> <th>Weight</th> </tr><tr> <td>bench</td><td> <input id="s-1" type="number"></input> </td><td> <input id="r-1" type="number"></input> </td><td> <input id="w-1" type="number"></input> </td></tr><tr> <td>squat</td><td> <input id="s-2" type="number"></input> </td><td> <input id="r-2" type="number"></input> </td><td> <input id="w-2" type="number"></input> </td></tr><tr> <td>lunges</td><td> <input id="s-3" type="number"></input> </td><td> <input id="r-3" type="number"></input> </td><td> <input id="w-3" type="number"></input> </td></tr><tr> <td>curls</td><td> <input id="s-4" type="number"></input> </td><td> <input id="r-4" type="number"></input> </td><td> <input id="w-4" type="number"></input> </td></tr></table>'
     var div = document.createElement("div")
     div.innerHTML = tableForm
     
@@ -146,9 +146,9 @@ addBtn.addEventListener('click', function(){
         workout.exercises = []
         for (var i = 0; i < 4; i++) {
             var j = i + 1;
-            var sets = document.getElementById('s-' + j).value
-            var reps = document.getElementById('r-' + j).value
-            var weight = document.getElementById('w-' + j).value
+            var sets = document.querySelector('#save-table #s-' + j).value
+            var reps = document.querySelector('#save-table #r-' + j).value
+            var weight = document.querySelector('#save-table #w-' + j).value
             console.log(sets,reps,weight)
             var exercise = {}
             exercise.name = "new exercise"
