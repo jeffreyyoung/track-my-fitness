@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Track My Fitness - Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/layout.css">
+    <link type="text/css" rel="stylesheet" href="css/workouts.css">
+</head>
+
+<body>
+    <div class="mobile-window">
+        <div class="container">
+
+            <header>
+                <span class="logo"></span>
+                <h1>Page Title</h1>
+                <p>Rank: 3</p>
+            </header>
+
+            <section class="content">
+                <br>
+                <br>
+
+
+
+                <div id="add-workout-btn" class="workouts-btn">Add Workout+</div>
+                <div id="workouts">
+
+                    <table>
+                        <caption>Date<span class="edit-icon"></span>
+                        </caption>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Weight</th>
+                        </tr>
+                        <tr>
+                            <td>bench</td>
+                            <td>
+                                <input  id = "s-1" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "r-1" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "w-1" type="number"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>squat</td>
+                            <td>
+                                <input id = "s-2" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "r-2" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "w-2" type="number"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>lunges</td>
+                            <td>
+                                <input id = "s-3" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "r-3" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "w-3" type="number"></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>curls</td>
+                            <td>
+                                <input id = "s-4" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "r-4" type="number"></input>
+                            </td>
+                            <td>
+                                <input id = "w-4" type="number"></input>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <br>
+                <br>
+            </section>
+
+            <nav>
+                <a class="nav-btn active" href="workouts.html">Workouts</a>
+                <a class="nav-btn" href="stats.html">Stats</a>
+                <a class="nav-btn" href="charts.html">Charts</a>
+            </nav>
+
+        </div>
+    </div>
+    <script src="js/layout.js"></script>
+    <script src="js/editable-tables.js"></script>
+</body>
+
+</html>

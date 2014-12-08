@@ -1,0 +1,59 @@
+@blue-lightest: #B7D4F5;
+
+/*@blue-lighter: 
+@blue: */
+
+@blue-darker: #1A549B;
+
+/*@blue-darkest:*/
+@accent-color: #1A549B;
+
+
+
+.edit-icon {
+    content: url("https://cdn4.iconfinder.com/data/icons/simplicio/128x128/file_edit.png");
+    background-size: 10px 10px;
+    float: right;
+    width: 20px;
+    &:hover {
+        cursor: pointer;   
+    }
+   
+}
+
+
+#workouts {
+    caption {
+        background-color: @blue-lightest;
+        color: @blue-darker;
+        padding: 10px;
+
+    }
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    table,
+    td,
+    th {
+        border: 1px solid @blue-lightest;
+        padding: 5px;
+    }
+}
+
+
+.workouts-btn {
+    width: 80%;
+    margin: 15px auto;
+    background-color: @blue-darker;
+
+   color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.workouts-btn:hover {
+    cursor: pointer;
+}
