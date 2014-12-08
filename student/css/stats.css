@@ -1,0 +1,44 @@
+#ranksTable {
+	border: solid 1px;
+	border-color: #1a549b;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+#ranksTable th {
+	color: #1a549b;
+	background-color: #b7d4f5;
+}
+
+#ranksTable tr, td, th{
+	border: solid 1px;
+	border-color: #1a549b;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#ranks {
+	width: 25%;
+}
+
+#name {
+	width: 50%;
+}
+
+#lbs {
+	width: 25%;
+}
+
+#improvementTable {
+	width: 100%;
+}
+
+#improvementTable td {
+	border: none;
+	width: 50%;
+}
+
+#improvLBS {
+	text-align: right;
+}
