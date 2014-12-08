@@ -76,3 +76,8 @@ nav .nav-btn.active {
   background-color: #b7d4f5;
   color: #1a549b;
 }
+
+#question {
+	width: 30px;
+	float: right;
+}
