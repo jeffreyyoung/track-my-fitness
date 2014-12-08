@@ -49,9 +49,25 @@ function repaint() {
     for (var i = 0; i < $saveBtns.length; i++){
         var saveBtn = $saveBtns[i]
         saveBtn.addEventListener('click', function(){
-           console.log(this.dataset.i) 
-           tableData[this.dataset.i].editMode = false
-           repaint()
+            console.log(this)
+//           console.log(this.dataset.i) 
+            workout = tableData[this.dataset.i]
+            workout.editMode = false
+            var $table = document.getElementById('table-' + this.dataset.i)
+            console.log($table)
+            var tableId = '#table-' + this.dataset.i
+            for(var j = 0; j < workout.exercises.length; j++){
+                var exercise = workout.exercises[j]
+                var h = j + 1;
+                var sets = document.querySelector(tableId + ' #s-' + h).value
+                var reps = document.querySelector(tableId + ' #r-' + h).value
+                var weight = document.querySelector(tableId + ' #w-' + h).value
+                exercise.sets = sets
+                exercise.reps = reps
+                exercise.weight = weight
+            }
+//           console.log(tableData[this.dataset.i])
+            repaint()
         });
                                  
                                  
@@ -88,9 +104,9 @@ function generateWorkoutHtml(workout, i) {
     return html;
 }
 
-function generateEditableWorkoutHtml(workout, i) {
+function generateEditableWorkoutHtml(workout, h) {
     var html = ""
-    html += "<table id = 'table-" + i + "'>"
+    html += "<table id = 'table-" + h + "'>"
     html += "<caption>" + workout.date + "</caption>"
     html += "<tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Weight</th></tr>"
     for (var i = 0; i < workout.exercises.length; i++) {
@@ -103,7 +119,7 @@ function generateEditableWorkoutHtml(workout, i) {
         html += "<td><input id='w-" + j + "' value='" + exercise.weight + "'></input></td>"
         html += "</tr>"
     }
-    html += "</table><div data-i='" + i + "' class='workouts-btn editable-save'>Save</div>"
+    html += "</table><div data-i='" + h + "' class='workouts-btn editable-save'>Save</div>"
     return html
 }
 

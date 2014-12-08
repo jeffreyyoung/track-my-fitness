@@ -8,22 +8,96 @@
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
     <script src="js/charts.js"></script>
 </head>
+<style type="text/css">
+#cover {
+display:none;
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+z-index: 99;
+background:black;
+filter:alpha(Opacity=50);
+opacity:0.7;
+-moz-opacity:0.7;
+-khtml-opacity:0.7;
+}
+#dialog {
+    display:none;
+    left:40%;
+    top:30%;
+    width:200px;
+    height:200px;
+    position:absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 15px;
+    z-index:100;
+    background:white;
+    padding:2px;
+    font:10pt tahoma;
+    border:1px solid gray;
+    vertical-align: middle;
+    text-align:center;
+}
+#questionMark {
+    float:right;
+    margin-right:10px;
+    margin-top:30px;
+}
+#closeDialog {
+    float:right;
+    margin-right: 10px;
+    margin-top: 50%;
+}
+</style>
+<script type="text/javascript">
+function showPopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "block"
+dlg.style.display = "block"
+if (document.body.style.overflow = "hidden") {
+    cvr.style.width = "1024"
+    cvr.style.height = "100&#37;"
+    }
+}
+function closePopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "none"
+dlg.style.display = "none"
+document.body.style.overflowY = "scroll"
+}
+</script>
 <body>
+    <div id="cover"></div>
+        <div id="dialog">
+            The predicted 1-rep-max is a prediction of one's max based on the weight and 
+            reps lifted during a workout.
+            <br><button id="closeDialog" onclick="closePopUp('dialog');">OK</button>
+        </div>
     <div class="mobile-window">
         <div class="container">
             
             <header>
-                <span class="logo"></span>
+                <span class="logo">
+					<img src="logo.png">
+				</span>
                 <h1>Charts</h1>
                 <p>Rank: 3</p>
             </header>
             
             <section class="content">
-               <div id="container"></div> 
+                 <img id="questionMark" onclick="showPopUp('dialog')" src="QuestionMark.png">
+               <div id="container">
+
+               </div> 
             </section>
             
             <nav>
-                <a class="nav-btn" href="workouts.html">Workouts</a>
+                <a class="nav-btn" href="layout.html">Workouts</a>
                 <a class="nav-btn" href="stats.html">Stats</a>
                 <a class="nav-btn active" href="charts.html">Charts</a>
             </nav>
