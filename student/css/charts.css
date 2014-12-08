@@ -18,16 +18,6 @@ body {
 .container {
   background-color: white;
 }
-
-#test {
-width: 100%;
-  position: fixed;
-  top: 0px;
-  background-color: #b7d4f5;
-  color: #1a549b;
-  padding: 15px;
-  
-}
 #firstChart {
  margin-top: 80px;
 }
