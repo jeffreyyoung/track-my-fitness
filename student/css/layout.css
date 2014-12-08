@@ -35,6 +35,7 @@ header {
   background-color: #b7d4f5;
   color: #1a549b;
   padding: 15px;
+  z-index: 100;
 }
 header * {
   display: inline-block;

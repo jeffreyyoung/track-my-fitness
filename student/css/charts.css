@@ -2,72 +2,11 @@
 /*@blue-lighter: 
 @blue: */
 /*@blue-darkest:*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-nav {
-  font-size: 0;
-}
-html,
-body {
-  height: 100%;
-  max-height: 100%;
-}
-.container {
-  background-color: white;
-}
+
 #firstChart {
  margin-top: 80px;
 }
-#header {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  background-color: #b7d4f5;
-  color: #1a549b;
-  padding: 15px;
-  z-index: 100;
-}
-#header * {
-  display: inline-block;
-}
-#header .logo {
-  width: 24%;
-  background: url("logo.png") left top;
-}
-#header h1 {
-  width: 49%;
-}
-#header p {
-  width: 24%;
-}
-.content {
-  height: calc(100vh - @footer-height - @header-height);
-  overflow-y: scroll;
-  margin-top: 50px;
-  margin-bottom: 60px;
-}
-nav {
-  position: fixed;
-  bottom: 0;
-  overflow-x: hidden;
-  width: calc(100%);
-}
-nav .nav-btn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: inline-block;
-  width: calc(33% - 1px);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 14pt;
-  background-color: #1a549b;
-  color: white;
-  text-decoration: none;
-}
-nav .nav-btn.active {
-  background-color: #b7d4f5;
-  color: #1a549b;
+
+#content div {
+  z-index: -100;
 }
