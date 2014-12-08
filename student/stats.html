@@ -6,8 +6,8 @@ var dlg = document.getElementById(el)
 cvr.style.display = "block"
 dlg.style.display = "block"
 if (document.body.style.overflow = "hidden") {
-	cvr.style.width = "1024"
-	cvr.style.height = "100&#37;"
+	cvr.style.width = "100%"
+	cvr.style.height = "100%;"
 	}
 }
 function closePopUp(el) {
@@ -34,11 +34,14 @@ opacity:0.5;
 }
 #dialog {
 display:none;
-left:200px;
-top:200px;
 width:200px;
 height:200px;
 position:absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
 z-index:100;
 background:white;
 padding:2px;
