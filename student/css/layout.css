@@ -41,7 +41,6 @@ header * {
 }
 header .logo {
   width: 24%;
-  background: url("logo.png") left top;
 }
 header h1 {
   width: 49%;
