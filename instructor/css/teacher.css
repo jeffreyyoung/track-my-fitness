@@ -1,0 +1,11 @@
+.grid {
+    width: 870px;
+    height: 790px;
+}
+
+.grid div {
+    width: 435px;
+    height: 395px;
+    /*outline: 1px solid;*/
+    float: left;
+}

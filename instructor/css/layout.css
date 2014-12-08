@@ -28,7 +28,7 @@ html {
   float: left;
   padding: 15px;
   margin 15px;
-  img style="margin: 15";
+ /* img style="margin: 15";*/
 }
  img.container{
   border: 1px solid #1a549b;
@@ -67,7 +67,7 @@ header {
 .content {
   border: 1px solid #111111;
   height: 816px;
-  img style="margin: 15";
+  /*img style="margin: 15";*/
 }
 
 body, ul, li, p, h1, h2, h3, h4, h5
