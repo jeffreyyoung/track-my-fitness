@@ -1,5 +1,145 @@
 <html>
+<style type="text/css">
+#cover {
+display:none;
+position:absolute;
+left:0px;
+top:0px;
+width:100%;
+height:100%;
+background:black;
+filter:alpha(Opacity=50);
+opacity:0.7;
+-moz-opacity:0.7;
+-khtml-opacity:0.7;
+}
+#dialog {
+	display:none;
+	left:40%;
+	top:30%;
+	width:200px;
+	height:200px;
+	position:absolute;
+	margin-top: -50px;
+	margin-left: -50px;
+	border-radius: 15px;
+	z-index:100;
+	background:white;
+	padding:2px;
+	font:10pt tahoma;
+	border:1px solid gray;
+	vertical-align: middle;
+	text-align:center;
+}
+#questionMark {
+	float:right;
+	margin-right:10px;
+}
+#closeDialog {
+	float:right;
+	margin-right: 10px;
+	margin-top: 50%;
+}
+</style>
+<script type="text/javascript">
+function showPopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "block"
+dlg.style.display = "block"
+if (document.body.style.overflow = "hidden") {
+	cvr.style.width = "1024"
+	cvr.style.height = "100&#37;"
+	}
+}
+function closePopUp(el) {
+var cvr = document.getElementById("cover")
+var dlg = document.getElementById(el)
+cvr.style.display = "none"
+dlg.style.display = "none"
+document.body.style.overflowY = "scroll"
+}
+</script>
 <head>
+<<<<<<< HEAD
+	<link rel="stylesheet" type="text/css" href="wireframe.css">
+	
+
+</head>
+<body>
+	
+	<img src="logo.png">
+	<div id="cover"></div>
+		<div id="dialog">
+			Your rank is based off of your improvement of your predicted max.
+			<br><button id="closeDialog" onclick="closePopUp('dialog');">OK</button>
+		</div>
+	<h1>Track My Fitness</h1>
+	<a href="wireframe.html"><div class="button" id="home">Home</div></a>
+	<img id="questionMark" onclick="showPopUp('dialog')" src="QuestionMark.png">
+	<h2>Class Ranks</h2>
+	<div id="ranksInfo">
+		<table id="ranksTable">
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+			<tr>
+				<td>Rank</td>
+				<td>% Progress</td>
+			</tr>
+		</table>
+	</div>
+	<a href="addWorkout.html"><div class="button" id="submit">Submit Workout</div></a>
+	<a href="history.html"><div class="button" id="history">View History</div></a>
+	<a href="ranks.html"><div class="button" id="ranks">Class Ranks</div></a>
+	
+	<a href="teacherView.html" id="teacher">Teacher View</a>
+=======
     <title>Track My Fitness - Stats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/layout.css">
@@ -123,5 +263,6 @@
         </div>
     </div>
 <script src="js/layout.js"></script>
+>>>>>>> origin/master
 </body>
 </html>
