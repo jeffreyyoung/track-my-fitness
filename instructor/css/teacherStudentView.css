@@ -8,4 +8,26 @@
     height: 790px;
     /*outline: 1px solid;*/
     float: left;
+    overflow-y: scroll;
+}
+
+table.workout {
+     border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px; 
+}
+
+table,
+td,
+th {
+    
+    border: 1px solid #b7d4f5;
+    padding: 5px;
+}
+
+table caption {
+  background-color: #b7d4f5;
+  color: #1a549b;
+  padding: 10px;
 }
