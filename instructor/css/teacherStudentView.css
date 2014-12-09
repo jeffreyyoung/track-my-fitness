@@ -1,0 +1,11 @@
+.grid {
+    width: 870px;
+    height: 790px;
+}
+
+.cell {
+    width: 435px;
+    height: 790px;
+    /*outline: 1px solid;*/
+    float: left;
+}
