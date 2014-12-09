@@ -34,8 +34,8 @@ opacity:0.5;
 }
 #dialog {
 display:none;
-width:200px;
-height:200px;
+width:400px;
+height:400px;
 position:absolute;
 top:0;
 bottom: 0;
@@ -44,19 +44,19 @@ right: 0;
 margin: auto;
 z-index:100;
 background:white;
+text-align: center;
 padding:2px;
-font:10pt tahoma;
-border:1px solid gray;
+font:15pt Arial;
+border:5px solid black;
 border-radius:15px;
+padding: 10px;
 }
 #question {
 	float:right;
 }
 #close {
-   float:right;
-    margin-top: 60%;
-    margin-right: 15px;
-      border-top: 1px solid #96d1f8;
+   margin-top: 20%;
+   border-top: 1px solid #96d1f8;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
@@ -76,6 +76,8 @@ border-radius:15px;
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
+   width:60px;
+   height:45px;
 }
 </style>
 <head>
@@ -87,7 +89,11 @@ border-radius:15px;
 <body>
 <div id="cover"></div>
 <div id="dialog">
-	Show Explanation
+	<strong>Overall:</strong> An average of the improvement from each lift. <br><br>
+	<strong>Class Avg:</strong> Average overall within the class. <br><br>
+	<strong>Greatest:</strong> Lift you have improved in the most <br><br>
+	<strong>Least:</strong> Lift you have improved in the least <br><br>
+
 	<br><button id="close" onclick="closePopUp('dialog');">OK</button>
 </div>
     <div class="mobile-window">
@@ -126,6 +132,7 @@ border-radius:15px;
 						<td id="improvLBS">Squat</td>
 					</tr>
 				</table>
+				<br><br>
                 <table id="ranksTable">
 					<tr>
 						<th id="rank">Rank</th>
