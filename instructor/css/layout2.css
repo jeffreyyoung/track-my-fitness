@@ -94,6 +94,13 @@ a.button {
     text-align:center  
 }
 
+a:link{
+text-decoration: none;
+}
+
+a:visited{
+color: #111111;
+}
 
 /* CSS Accordion styles */
 dl
