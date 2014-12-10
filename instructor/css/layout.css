@@ -11,6 +11,7 @@
   padding: 30px 15px 30px 30px;
   overflow: auto;
 }
+
 .container .side-bar {
   width: 200px;
   float: left;
@@ -52,6 +53,8 @@ header {
   border: 1px solid #1a549b;
   background-color: #b7d4f5;
   color: #1a549b;
+  z-index:1000;
+  position:absolute;
 }
 .content {
   border: 1px solid #1a549b;
