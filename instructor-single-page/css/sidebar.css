@@ -22,5 +22,8 @@ ul {
 .accordion ul li.selected {
     background-color: #b7d4f5;
     color: #1a549b;
+}
 
+.accordion ul li:hover {
+    cursor: pointer;
 }
