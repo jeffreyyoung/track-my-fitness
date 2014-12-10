@@ -45,31 +45,30 @@ opacity:0.5;
 }
 #dialog {
 display:none;
+width:400px;
+height:200px;
 position:absolute;
 top:0;
 bottom: 0;
 left: 0;
 right: 0;
 margin: auto;
-width:200px;
-height:200px;
-position:absolute;
 z-index:100;
 background:white;
+text-align: center;
 padding:2px;
-font:10pt tahoma;
-border:1px solid gray;
+font:15pt Arial;
+border:5px solid black;
 border-radius:15px;
+padding: 20px;
 }
 #question {
     float:right;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #close {
-    float:right;
-    margin-top: 60%;
-    margin-right: 15px;
-      border-top: 1px solid #96d1f8;
+     margin-top: 20%;
+   border-top: 1px solid #96d1f8;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
@@ -89,12 +88,14 @@ border-radius:15px;
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
+   width:60px;
+   height:45px;
 }
 </style>
 <body>
     <div id="cover"></div>
 <div id="dialog">
-    Show Explanation
+    Your predicted one rep max is determined by your best lift (highest weight with most reps).
     <br><button id="close" onclick="closePopUp('dialog');">OK</button>
 </div>
 

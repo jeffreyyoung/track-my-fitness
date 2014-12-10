@@ -31,12 +31,18 @@
 }
 
 #improvementTable {
+	border: none;
+	border-collapse: collapse;
 	width: 100%;
 }
 
-#improvementTable td {
-	border: none;
+#improvementTable td{
 	width: 50%;
+	border: none;
+}
+
+#improvementTable tr {
+	border-bottom: solid 1px #1a549b;
 }
 
 #improvLBS {
@@ -45,4 +51,9 @@
 
 h2 {
 	text-align: center;
+}
+
+.content  {
+	padding-left: 20px;
+	padding-right: 20px;
 }

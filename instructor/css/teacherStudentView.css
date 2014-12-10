@@ -11,6 +11,10 @@
     overflow-y: scroll;
 }
 
+.chart {
+  margin-bottom: 20px;
+}
+
 table.workout {
      border-collapse: collapse;
   width: 80%;
