@@ -30,20 +30,30 @@ header * {
   display: inline-block;
 }
 header .logo {
-  width: 24%;
+  width: 47%;
+  float: left;
   background: url("path/to/logo.png") left top;
+  margin-left: 10px;
 }
-header h1 {
-  width: 49%;
-}
+
 header p {
-  width: 24%;
+  width: 47%;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 8px;
+  float: right;
 }
+
+header img {
+	width: 24%;
+}
+
 .content {
   height: calc(100vh - @footer-height - @header-height);
-  overflow-y: scroll;
   margin-top: 24px;
   margin-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 nav {
   position: fixed;
