@@ -88,3 +88,8 @@ header {
   top: 70%;
   transform: translateY(-70%);
 }
+
+.studentInfo {
+	height: 500px;
+	overflow-y: scroll;
+}
