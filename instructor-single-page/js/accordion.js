@@ -43,7 +43,8 @@ function updateMain(html) {
     setTimeout(function(){ 
         $main.innerHTML = html
         $main.classList.remove('hidden')
-        $main.classList.add('visible')               
+        $main.classList.add('visible') 
+        buildCharts()
     }, 200);
     
 }

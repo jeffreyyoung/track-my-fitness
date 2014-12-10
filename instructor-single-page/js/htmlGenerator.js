@@ -1,9 +1,7 @@
 function generateSectionHtml(section) {
 
-    var html = '<header> <h1>' + section /*put title here*/ + '</h1> <span class="logo"></span> </header> <div> <div class="col-left">' + "stuff" /*put left col stuff here */ + '</div><div class="col-right">' + "more stuff" /*put right col stuff here */ + '</div></div>'
+    var html = '<header> <h1>' + section /*put title here*/ + '</h1> <span class="logo"></span> </header> <div> <div class="col-left">' + "stuff" /*put left col stuff here */ + '</div><div class="col-right">' + '<div id="firstChart"></div><div id="another"></div><script></script>' /*put right col stuff here */ + '</div></div>'
     return html;
-
-
 }
 
 
