@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/teacher.css">
+    <link ref="stylesheet" type="text/css" href="css/accordian.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="js/teacher.js"></script>
+    <style>
+        .accordion {
+            margin: 30px auto;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+            This will keep the slides from overflowing outside the accordion
+        }
+        .accordion ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            height: 0px;
+        }
+        .accordion.vertical ul.show {
+            height: 200px;
+            background-color: lightblue;
+        }
+        .accordion h2:hover {
+            cursor: pointer;
+        }
+        .selected {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="side-bar">
+
+
+            <ul class="accordion vertical">
+                <section>
+                    <h2>Section 1</h2>
+                    <ul class="hide">
+                        <li>Walter White</li>
+                        <li>Jimmy</li>
+                        <li>Jane</li>
+                        <li>Stephen</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Section 2</h2>
+                    <ul class="hide">
+                        <li>George</li>
+                        <li>Student 1</li>
+                        <li>Student 1</li>
+                        <li>Student 1</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Section 3</h2>
+                    <ul class="hide">
+                        <li>Student 1</li>
+                        <li>Student 1</li>
+                        <li>Student 1</li>
+                        <li>Student 1</li>
+                    </ul>
+                </section>
+            </ul>
+
+        </section>
+
+        <section class="main" id="main">
+<!-- TEST STUFF HERE -->
+            <header>
+                <h1>Jim's progress</h1>
+                <span class="logo"></span>
+            </header>
+            <div>
+                <div class="col-left">
+                
+                </div>
+                <div class="col-right">
+                
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <script src="js/layout.js"></script>
+        <script src="js/accordion.js"></script>
+
+
+</body>
+
+</html>

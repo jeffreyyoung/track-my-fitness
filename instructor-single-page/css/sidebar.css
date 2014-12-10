@@ -1,0 +1,23 @@
+.accordion h2 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    text-decoration: none;
+}
+
+.accordion ul li {
+    background-color: dodgerblue;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.accordion ul li.selected {
+    background-color: gray;
+}

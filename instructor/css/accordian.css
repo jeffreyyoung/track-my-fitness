@@ -1,0 +1,27 @@
+        .accordion {
+            margin: 30px auto;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+            /* This will keep the slides from overflowing outside the accordion */
+        }
+        /* Now for the slides themselves */
+        .accordion ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.4s ease-in;
+            -moz-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            height: 0px;
+        }
+        .accordion.vertical ul.show {
+            height: 200px;
+            background-color: lightblue;
+        }
+        .accordion h2:hover {
+            cursor: pointer;
+        }
+        .selected {
+            background-color: gray;
+        }
