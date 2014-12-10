@@ -15,7 +15,7 @@
     overflow: auto;
 }
 .container .side-bar {
-    width: 200px;
+    width: 20%;
     float: left;
     margin: 0 15px;
     border: 1px solid #1a549b;
@@ -23,7 +23,7 @@
     min-height: 400px;
 }
 .container .main {
-    width: 700px;
+    width: 70%;
     float: left;
     margin: 0 15px;
     height: 100%;
@@ -71,10 +71,12 @@ header {
     padding: 10px;
 }
 #head-banner {
+    width: 100%;
     background-color: #b7d4f5;
     color: #1a549b;
-    margin: 0 15px;
-    width: 962px;
+    padding: 15px 45px;
+    position: relative;
+    top: 0px;
 }
 
 #head-banner {
