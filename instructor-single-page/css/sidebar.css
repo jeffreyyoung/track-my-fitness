@@ -6,6 +6,11 @@
     margin-bottom: 10px;
 }
 
+.accordion h2.selected {
+    background-color: #b7d4f5;
+    color: #1a549b;
+}
+
 ul {
     text-decoration: none;
     list-style-type: none;
