@@ -1,3 +1,4 @@
+
 <html>
 <script type="text/javascript">
 function showPopUp(el) {
@@ -55,7 +56,7 @@ padding: 10px;
 	float:right;
 }
 #close {
-   margin-top: 20%;
+   margin-top: 10%;
    border-top: 1px solid #96d1f8;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
@@ -89,10 +90,23 @@ padding: 10px;
 <body>
 <div id="cover"></div>
 <div id="dialog">
-	<strong>Overall:</strong> An average of the improvement from each lift. <br><br>
-	<strong>Class Avg:</strong> Average overall within the class. <br><br>
-	<strong>Greatest:</strong> Lift you have improved in the most <br><br>
-	<strong>Least:</strong> Lift you have improved in the least <br><br>
+<table style="border:white">
+	<tr>
+		<td style="border:white"><strong>Overall:</strong> An average of the improvement from each lift </td>
+	</tr>
+	<tr>
+		<td style="border:white"><strong>Class Avg:</strong> Average overall within the class</td>
+	</tr>
+	<tr>
+		<td style="border:white"><strong>Greatest:</strong> Lift you have improved in the most </td>
+	</tr>
+	<tr>
+		<td style="border:white"><strong>Least:</strong> Lift you have improved in the least </td>
+	</tr>
+	<tr>
+		<td style="border:white"><strong>Rank:</strong> How your overall stacks up against the rest of the class </td>
+	</tr>
+</table>
 
 	<br><button id="close" onclick="closePopUp('dialog');">OK</button>
 </div>

@@ -24,7 +24,7 @@ header {
   top: 0px;
   background-color: #b7d4f5;
   color: #1a549b;
-  padding: 15px;
+  padding: 2px;
 }
 header * {
   display: inline-block;
@@ -41,7 +41,8 @@ header p {
 }
 .content {
   height: calc(100vh - @footer-height - @header-height);
-  margin-top: 50px;
+  overflow-y: scroll;
+  margin-top: 24px;
   margin-bottom: 60px;
 }
 nav {

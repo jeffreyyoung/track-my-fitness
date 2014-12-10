@@ -1,0 +1,35 @@
+.accordion h2 {
+    background-color: #1a549b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion h2.selected {
+    background-color: #b7d4f5;
+    color: #1a549b;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.accordion ul li {
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.accordion ul li.selected {
+    background-color: #b7d4f5;
+    color: #1a549b;
+}
+
+.accordion ul li:hover {
+    cursor: pointer;
+}
