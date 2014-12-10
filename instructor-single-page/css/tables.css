@@ -16,3 +16,7 @@
   border: 1px solid #b7d4f5;
   padding: 5px;
 }
+
+.tables th{
+background-color: #b7d4f5;
+}
