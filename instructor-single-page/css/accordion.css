@@ -15,7 +15,7 @@
     height: 0px;
 }
 .accordion.vertical ul.show {
-    height: 200px;
+    height: 250px;
 }
 .accordion h2:hover {
     cursor: pointer;

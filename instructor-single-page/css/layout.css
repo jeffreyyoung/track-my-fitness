@@ -52,9 +52,11 @@
     color: #1a549b;
 }
 header {
-    border: 1px solid #1a549b;
+/*    border: 1px solid #1a549b;*/
+    padding: 18px;
     background-color: #b7d4f5;
     color: #1a549b;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
 }
 .content {
     border: 1px solid #1a549b;
@@ -77,10 +79,10 @@ header {
     padding: 15px 45px;
     position: relative;
     top: 0px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
 }
 
 #head-banner h1 {
     display: inline-block;
     margin-left: 50px;
-    
 }
