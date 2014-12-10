@@ -25,6 +25,7 @@ header {
   background-color: #b7d4f5;
   color: #1a549b;
   padding: 2px;
+  z-index: 1000;
 }
 header * {
   display: inline-block;
@@ -45,7 +46,7 @@ header p {
 }
 
 header img {
-	width: 24%;
+	width: 38px;
 }
 
 .content {
