@@ -13,6 +13,7 @@
 .container {
     padding: 30px 0 0;
     overflow: auto;
+    margin-top: 50px;
 }
 .container .side-bar {
     width: 20%;
@@ -86,11 +87,21 @@ header {
 
 #head-banner span img {
     position: relative;
-    top: 10px;
+    top: 2px;
+}
+
+#head-banner {
+    height: 52px;
+    position: fixed;
+    
 }
 
 #head-banner h1 {	
-  position: relative;
-  top: 70%;
-  transform: translateY(-70%);
+    position: absolute;
+    top: 9px;
+    left: calc(50% - 120px);
+}
+
+.main header {
+    margin-bottom: 10px;
 }
