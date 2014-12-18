@@ -31,14 +31,14 @@ header * {
   display: inline-block;
 }
 header .logo {
-  width: 47%;
+  width: 15%;
   float: left;
   background: url("path/to/logo.png") left top;
   margin-left: 10px;
 }
 
 header p {
-  width: 47%;
+  width: 15%;
   text-align: right;
   margin-right: 10px;
   margin-top: 8px;
