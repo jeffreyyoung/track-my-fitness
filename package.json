@@ -1,0 +1,23 @@
+{
+  "name": "track-my-fitness",
+  "version": "1.0.0",
+  "description": "blah",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffreyyoung/track-my-fitness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyyoung/track-my-fitness/issues"
+  },
+  "homepage": "https://github.com/jeffreyyoung/track-my-fitness",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}

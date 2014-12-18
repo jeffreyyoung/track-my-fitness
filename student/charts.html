@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/layout.css">
     <link type="text/css" rel="stylesheet" href="css/charts.css">
+    
+	<link type="text/css" rel="stylesheet" href="css/dialogue.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -28,71 +30,6 @@ dlg.style.display = "none"
 document.body.style.overflowY = "scroll"
 }
 </script>
-<style type="text/css">
-#cover {
-display:none;
-position:absolute;
-left:0px;
-top:0px;
-width:100%;
-height:100%;
-background:black;
-z-index:50;
-filter:alpha(Opacity=50);
-opacity:0.5;
--moz-opacity:0.5;
--khtml-opacity:0.5
-}
-#dialog {
-display:none;
-width:400px;
-height:200px;
-position:absolute;
-top:0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-z-index:100;
-background:white;
-text-align: center;
-padding:2px;
-font:15pt Arial;
-border:5px solid black;
-border-radius:15px;
-padding: 20px;
-}
-#question {
-  float:right;
-	width: 35px;
-  z-index: 1000px;
-}
-#close {
-     margin-top: 20%;
-   border-top: 1px solid #96d1f8;
-   background: #65a9d7;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-   background: -o-linear-gradient(top, #3e779d, #65a9d7);
-   padding: 5px 10px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 14px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   width:60px;
-   height:45px;
-}
-</style>
 <body>
     <div id="cover"></div>
 <div id="dialog">
