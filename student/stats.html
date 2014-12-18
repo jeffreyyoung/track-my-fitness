@@ -1,160 +1,178 @@
-
 <html>
 <script type="text/javascript">
-function showPopUp(el) {
-var cvr = document.getElementById("cover")
-var dlg = document.getElementById(el)
-cvr.style.display = "block"
-dlg.style.display = "block"
-if (document.body.style.overflow = "hidden") {
-	cvr.style.width = "100%"
-	cvr.style.height = "100%;"
-	}
-}
-function closePopUp(el) {
-var cvr = document.getElementById("cover")
-var dlg = document.getElementById(el)
-cvr.style.display = "none"
-dlg.style.display = "none"
-document.body.style.overflowY = "scroll"
-}
+    function showPopUp(el) {
+        var cvr = document.getElementById("cover")
+        var dlg = document.getElementById(el)
+        cvr.style.display = "block"
+        dlg.style.display = "block"
+        if (document.body.style.overflow = "hidden") {
+            cvr.style.width = "100%"
+            cvr.style.height = "100%;"
+        }
+    }
+
+    function closePopUp(el) {
+        var cvr = document.getElementById("cover")
+        var dlg = document.getElementById(el)
+        cvr.style.display = "none"
+        dlg.style.display = "none"
+        document.body.style.overflowY = "scroll"
+    }
 </script>
 
 <head>
     <title>Track My Fitness - Stats</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link type="text/css" rel="stylesheet" href="css/layout.css">
-	<link type="text/css" rel="stylesheet" href="css/stats.css">
-    
-	<link type="text/css" rel="stylesheet" href="css/dialogue.css">
-    
-</head>
-<body>
-<div id="cover"></div>
-<div id="dialog">
-<table style="border:white">
-	<tr>
-		<td style="border:white"><strong>Overall:</strong> An average of the improvement from each lift </td>
-	</tr>
-	<tr>
-		<td style="border:white"><strong>Class Avg:</strong> Average overall within the class</td>
-	</tr>
-	<tr>
-		<td style="border:white"><strong>Greatest:</strong> Lift you have improved in the most </td>
-	</tr>
-	<tr>
-		<td style="border:white"><strong>Least:</strong> Lift you have improved in the least </td>
-	</tr>
-	<tr>
-		<td style="border:white"><strong>Rank:</strong> How your overall stacks up against the rest of the class </td>
-	</tr>
-</table>
+    <link type="text/css" rel="stylesheet" href="css/stats.css">
+    <link type="text/css" rel="stylesheet" href="css/dialogue.css">
 
-	<br><button id="close" onclick="closePopUp('dialog');">OK</button>
-</div>
+</head>
+
+<body>
+    <div id="cover"></div>
+    <div id="dialog">
+        <table style="border:white">
+            <tr>
+                <td style="border:white"><strong>Overall:</strong> An average of the improvement from each lift</td>
+            </tr>
+            <tr>
+                <td style="border:white"><strong>Class Avg:</strong> Average overall within the class</td>
+            </tr>
+            <tr>
+                <td style="border:white"><strong>Greatest:</strong> Lift you have improved in the most</td>
+            </tr>
+            <tr>
+                <td style="border:white"><strong>Least:</strong> Lift you have improved in the least</td>
+            </tr>
+            <tr>
+                <td style="border:white"><strong>Rank:</strong> How your overall stacks up against the rest of the class</td>
+            </tr>
+        </table>
+
+        <br>
+        <button id="close" onclick="closePopUp('dialog');">OK</button>
+    </div>
     <div class="mobile-window">
         <div class="container">
-            
+
             <header>
                 <span class="logo">
 					<img src="logo.png">
 				</span>
-                <p><b>Rank: 3</b></p>
+                <p><b>Rank: 3</b>
+                </p>
             </header>
-            
+
             <section class="content">
-				<br>
-				<br>
-				<h2>Improvement</h2>
-				<div>
-					<img onclick = "showPopUp('dialog')" id="question" src="QuestionMark.png">
-				</div>
-				<table id="improvementTable">
-					<tr>
-						<td><b>Overall:</b></td>
-						<td id="improvLBS">25 lbs</td>
-					</tr>
-					<tr>
-						<td><b>Class Avg:</b></td>
-						<td id="improvLBS">18 lbs</td>
-					</tr>
-					<tr>
-						<td><b>Greatest:</b></td>
-						<td id="improvLBS">Bench</td>
-					</tr>
-					<tr>
-						<td><b>Least:</b></td>
-						<td id="improvLBS">Squat</td>
-					</tr>
-				</table>
-				<br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h2>Improvement</h2>
+                <div>
+                    <img onclick="showPopUp('dialog')" id="question" src="QuestionMark.png">
+                </div>
+                <table id="improvementTable">
+                    <tr>
+                        <td><b>Overall:</b>
+                        </td>
+                        <td id="improvLBS">25 lbs</td>
+                    </tr>
+                    <tr>
+                        <td><b>Class Avg:</b>
+                        </td>
+                        <td id="improvLBS">18 lbs</td>
+                    </tr>
+                    <tr>
+                        <td><b>Greatest:</b>
+                        </td>
+                        <td id="improvLBS">Bench</td>
+                    </tr>
+                    <tr>
+                        <td><b>Least:</b>
+                        </td>
+                        <td id="improvLBS">Squat</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
                 <table id="ranksTable">
-					<tr>
-						<th id="rank">Rank</th>
-						<th id="name">Name</th>
-						<th id="lbs">LBS</th>
-					</tr>
-					<tr>
-						<td id="rank">1</td>
-						<td id="name">Hulk</td>
-						<td id="lbs">25</td>
-					</tr>
-					<tr>
-						<td id="rank">2</td>
-						<td id="name">Captain America</td>
-						<td id="lbs">20</td>
-					</tr>
-					<tr>
-						<td id="rank">3</td>
-						<td id="name">Christian Carnley</td>
-						<td id="lbs">18</td>
-					</tr>
-					<tr>
-						<td id="rank">4</td>
-						<td id="name">Alec Fullmer</td>
-						<td id="lbs">17</td>
-					</tr>
-					<tr>
-						<td id="rank">5</td>
-						<td id="name">Jessica Ampuero</td>
-						<td id="lbs">15</td>
-					</tr>
-					<tr>
-						<td id="rank">6</td>
-						<td id="name">Spencer Fullmer</td>
-						<td id="lbs">13</td>
-					</tr>
-					<tr>
-						<td id="rank">7</td>
-						<td id="name">Jeffrey Young</td>
-						<td id="lbs">11</td>
-					</tr>
-					<tr>
-						<td id="rank">8</td>
-						<td id="name">Jane Doe</td>
-						<td id="lbs">8</td>
-					</tr>
-					<tr>
-						<td id="rank">9</td>
-						<td id="name">John Doe</td>
-						<td id="lbs">7</td>
-					</tr>
-					<tr>
-						<td id="rank">10</td>
-						<td id="name">Alex Olsen</td>
-						<td id="lbs">6</td>
-					</tr>
-				</table>
+                    <tr>
+                        <th id="rank">Rank</th>
+                        <th id="name">Name</th>
+                        <th id="lbs">LBS</th>
+                    </tr>
+                    <tr>
+                        <td id="rank">1</td>
+                        <td id="name">Hulk</td>
+                        <td id="lbs">25</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">2</td>
+                        <td id="name">Captain America</td>
+                        <td id="lbs">20</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">3</td>
+                        <td id="name">Christian Carnley</td>
+                        <td id="lbs">18</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">4</td>
+                        <td id="name">Alec Fullmer</td>
+                        <td id="lbs">17</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">5</td>
+                        <td id="name">Jessica Ampuero</td>
+                        <td id="lbs">15</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">6</td>
+                        <td id="name">Spencer Fullmer</td>
+                        <td id="lbs">13</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">7</td>
+                        <td id="name">Jeffrey Young</td>
+                        <td id="lbs">11</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">8</td>
+                        <td id="name">Jane Doe</td>
+                        <td id="lbs">8</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">9</td>
+                        <td id="name">John Doe</td>
+                        <td id="lbs">7</td>
+                    </tr>
+                    <tr>
+                        <td id="rank">10</td>
+                        <td id="name">Alex Olsen</td>
+                        <td id="lbs">6</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
             </section>
-            
+
             <nav>
                 <a class="nav-btn" href="workouts.html">Workouts</a>
                 <a class="nav-btn active" href="stats.html">Stats</a>
                 <a class="nav-btn" href="charts.html">Charts</a>
             </nav>
-            
+
         </div>
     </div>
-<script src="js/layout.js"></script>
+    <script src="js/layout.js"></script>
 </body>
+
 </html>
